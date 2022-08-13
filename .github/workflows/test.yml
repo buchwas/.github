@@ -8,7 +8,7 @@ jobs:
   register:
     runs-on: ubuntu-latest
     steps:
-    - uses: buchwasa/organization-workflow@main
+    - uses: buchwasa/organization-workflows@main
       with:
         id: ${{ github.event.client_payload.id }}
         callback_url: ${{ github.event.client_payload.callback_url }}
